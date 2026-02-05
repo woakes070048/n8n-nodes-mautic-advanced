@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.8.0] - 2026-02-06
+### Added
+- **Notes resource**: CRUD for contact notes (create, get, get many, update, delete).
+
 ## [0.7.6] - 2026-01-29
 ### Fixed
 - Fixed issue with svg icon

@@ -76,6 +76,7 @@ export function buildQueryFromOptions(
   if (options.orderByDir) query.orderByDir = options.orderByDir as string;
   if (options.search) query.search = options.search as string;
   if (options.publishedOnly !== undefined) query.publishedOnly = options.publishedOnly as boolean;
+  if (options.minimal !== undefined) query.minimal = options.minimal as boolean;
   return query;
 }
 

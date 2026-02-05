@@ -11,6 +11,7 @@ import { executeContactOperation } from './operations/ContactOperations';
 import { executeCompanyOperation } from './operations/CompanyOperations';
 import { executeCampaignOperation } from './operations/CampaignOperations';
 import { executeFieldOperation } from './operations/FieldOperations';
+import { executeNoteOperation } from './operations/NoteOperations';
 import { executeNotificationOperation } from './operations/NotificationOperations';
 import { executeSegmentOperation } from './operations/SegmentOperations';
 import { executeEmailOperation } from './operations/EmailOperations';
@@ -36,6 +37,7 @@ import { contactSegmentFields, contactSegmentOperations } from './ContactSegment
 import { emailFields, emailOperations } from './EmailDescription';
 import { fieldFields, fieldOperations } from './FieldDescription';
 import { mauticApiRequest, mauticApiRequestAllItems } from './GenericFunctions';
+import { noteFields, noteOperations } from './NoteDescription';
 import { notificationFields, notificationOperations } from './NotificationDescription';
 import { segmentEmailFields, segmentEmailOperations } from './SegmentEmailDescription';
 import { segmentFields, segmentOperations } from './SegmentDescription';
@@ -149,6 +151,11 @@ export class MauticAdvanced implements INodeType {
             description: 'Manage custom fields for contacts and companies',
           },
           {
+            name: 'Note',
+            value: 'note',
+            description: 'Create, update, and retrieve contact notes',
+          },
+          {
             name: 'Notification',
             value: 'notification',
             description: 'Create, update, and retrieve notifications',
@@ -207,6 +214,8 @@ export class MauticAdvanced implements INodeType {
       ...emailFields,
       ...fieldOperations,
       ...fieldFields,
+      ...noteOperations,
+      ...noteFields,
       ...notificationOperations,
       ...notificationFields,
       ...segmentEmailOperations,
@@ -539,6 +548,9 @@ export class MauticAdvanced implements INodeType {
             break;
           case 'field':
             result = await executeFieldOperation(this, operation, i);
+            break;
+          case 'note':
+            result = await executeNoteOperation(this, operation, i);
             break;
           case 'notification':
             result = await executeNotificationOperation(this, operation, i);

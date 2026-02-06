@@ -7,4 +7,7 @@
     fill="#FDB933"
     d="m251.44 156.93-27.086 28.264 15.015 63.302h34.153zm-11.187-83.618 9.421 9.422-74.784 79.201-63.891-65.658-36.803 152.219h34.154l20.315-84.5 46.225 50.347 98.927-107.76 9.422 9.716 9.421-53.292z"
   />
+  <!-- Advanced badge -->
+  <rect x="70" y="286" rx="8" ry="8" width="210" height="40" fill="#FDB933"/>
+  <text x="175" y="306" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#1a1a1a" text-anchor="middle" dominant-baseline="central">ADVANCED</text>
 </svg>

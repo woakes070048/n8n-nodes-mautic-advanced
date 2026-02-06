@@ -2,6 +2,8 @@
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/msoukhomlinov)
 
+> **Note:** This is an **unofficial** community node, not affiliated with or endorsed by n8n GmbH. It was built on the back of n8n's official Mautic node because the official node does not provide the API coverage needed for many real-world Mautic workflows (e.g. notes, users, roles, stats, themes, emails, fields, notifications, advanced filtering, and more).
+
 Enhanced n8n node for Mautic with comprehensive API coverage including tags, campaigns, categories, notifications, and advanced contact management.
 
 ## 📋 Table of Contents
@@ -21,7 +23,7 @@ Enhanced n8n node for Mautic with comprehensive API coverage including tags, cam
 
 ## What Makes This "Advanced"?
 
-This enhanced version extends the standard n8n Mautic node with:
+The official n8n Mautic node covers basic contact and company operations but lacks support for many Mautic API endpoints. This unofficial community node extends that foundation with:
 
 - **🏷️ Complete Tag Management**: Full CRUD operations for tags (missing in the standard node)
 - **📊 Campaign Operations**: Create, clone, update, and manage campaigns
@@ -348,6 +350,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Credits
 
+- Built on top of n8n's official Mautic node — extended with additional API coverage where the official node falls short
 - Built with [n8n](https://n8n.io/) workflow automation platform
 - Uses [change-case](https://github.com/blakeembrey/change-case) for string manipulation
-- Icons and design inspired by n8n community standards
+- Uses a custom icon to distinguish from the official n8n Mautic node

@@ -1,5 +1,11 @@
 # Changelog
 
+
+## [0.9.0] - 2026-02-06
+### Changed
+- **Icon**: Replaced the node icon with a distinct custom icon to differentiate from the official n8n Mautic node
+- **Project Clarification**: This is an unofficial community node built on top of n8n's official Mautic node due to the official node lacking required API coverage (e.g. notes, users, roles, stats, themes, emails, fields, notifications, advanced filtering, and more)
+
 ## [0.8.0] - 2026-02-06
 ### Added
 - **Notes resource**: CRUD for contact notes (create, get, get many, update, delete).
